@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>website-template</title>
+        <link rel="stylesheet" media="all"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box; 
+            }
+            body {
+                display: flex;
+                margin: 5px;
+                min-height: 20px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            #main {
+                display: flex;
+                flex: 0 0 60%;
+            }
+            #main > article > section {
+                display: flex;
+                margin: 1px;
+                border-radius: 12px;
+            }
+            #main > article > section:hover {
+                background-color: blue;
+                transition-duration: 1.5s;
+                color: white;
+                border-radius: 12px;
+            }
+            .text {
+                margin: 20px;
+                font-size: 20px;
+            }
+            header, footer{
+                margin: 10px;
+            }
+            .flex-container {
+                display: flex;
+                align-items: stretch;
+                padding: 20px;
+                padding-left: 80px;
+                margin-left: 350px;
+                margin-right: 350px;
+                border: 1px solid black;
+            }
+            .button {
+                display: block;
+                opacity: 0;
+                color: #33aa54;
+                transition-duration: 0.5ms;
+                cursor: pointer;
+                margin: 4px 4px 4px 0;
+                margin-top: 10px;
+                height: 40px;
+                width: 40px;
+            }
+            .button:hover {
+                opacity: 1;
+                color: white;
+                display: flex;
+                width: 200px;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+            }
+            .button_top {
+                border: none;
+                background-color: #33aa54;
+                box-shadow: 0 0 10px 0 rgb(105 215 112 / 69%);
+                padding: 5px 13px;
+                display: flex;
+                margin: 4px 4px 4px 0;
+                margin-top: 10px;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                border-radius: 12px;
+                height: 40px;
+                width: 40px;
+                font-size: 25px;
+                line-height: 30px;
+                border-style: solid;
+                border-width: 0;
+            }
+            .button_top:hover {
+                opacity: 1;
+                font-stretch: condensed;
+                width: 200px;
+
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+            }    
+            div {
+                margin: 5px; 
+            }
+            h1 {
+                text-align: center;
+                margin-top: 40px;
+            }
+            @media screen and (max-width: 575px) {
+                #main {
+                    flex-direction: column;
+                    }
+                #main > article > section {
+                    border: 1px solid black;
+                }
+                #main > article > section:hover {
+                    background-color: blue;
+                    color: white;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    transition-duration: 1.3s;
+                }
+                body {
+                    flex-direction: column;
+                }
+                h1 {
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                .text {
+                    margin: 18px;
+                    font-size: 15px;
+                }
+                .button_top:hover {
+                    background-color: #33aa54;
+                    color: white;
+                    box-shadow: 0 0 10px 0 rgb(105 215 112 / 69%);
+                    border-radius: 12px;
+                    font-stretch: extra-condensed;
+                    font-size: 20px;
+                    width: 150px;
+                }
+                .flex-container {
+                    display: flex;
+                    align-items: stretch;
+                    padding: 20px;
+                    margin: 5px;
+                    border: 1px solid black;
+                }
+            }
+        </style>
+    <body>
+        <header>
+            <h1>Заголовок с смыслом)</h1>
+        </header>
+            <div id="main" class="flex-container">
+                <article>
+                    <section>
+                        <div class="text">Кнопка №1</div>
+                        <div class="button_top">
+                            <a type="button" class="button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="text">Кнопка №2</div>
+                        <div class="button_top">
+                            <a type="button" class="button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="text">Кнопка №3</div>
+                        <div class="button_top">
+                            <a type="button" class="button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="text">Кнопка №4</div>
+                        <div class="button_top">
+                            <a type="button" class="button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="text">Кнопка №5</div>
+                        <div class="button_top">
+                            <a type="button" class="button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </body>
+</html>
